@@ -1,0 +1,476 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/* --css google fonts link here-- */
+body {
+	font-family: 'Arima Madurai', cursive;
+}
+/* --- line styles here--- */
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+hr{
+	width: 90%;
+	border: none;
+	height: 1px;
+	background-color: rgb(173, 170, 170);
+}
+
+/* ----------------------------
+     cover section styles here
+------------------------------- */
+.banner {
+	background-color:  #0e0225;
+	max-width: 1170px;
+	border-radius: 30px;
+	padding: 20px 20px 0;
+	display: flex;
+	align-items: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+}
+.banner-text{
+	padding-left: 8%;
+	width: 50%;
+	color: white;
+}
+.banner-title{
+	font-size: 3.5em;
+	font-weight: 700;
+}
+.banner-text> p{
+	font-size: 16px;
+	font-weight: 400;
+	margin: 1em 0;
+}
+
+/* --- botton styles here --- */
+
+.watch-live-btn{
+	width: 150px;
+	font-size: 20px;
+	font-weight: 400;
+	padding: 10px 16px;
+	border-radius: 5px;
+	margin-top: 20px;
+	border: none;
+	background-color: #ec0b69;
+	display: flex;
+	align-items: center;
+	box-shadow: inset 0 0 0 0 #25d3d3;
+	transition: ease-out .3s;
+}
+.watch-live-btn > a{
+	text-decoration: none;
+	color:#fff;
+}
+.fa-arrow-right{
+   color: white;
+   padding-left: 2px;
+}
+.watch-live-btn:hover{
+	box-shadow: inset 150px 0 0 0 #5bb8d4;
+}
+.watch-live-btn:hover a{
+	color: #000;
+}
+
+/* --- cover image here--- */
+
+.banner-img {
+	padding-top: 30px;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.banner-img img {
+	width: 100%;
+}
+
+/* ------------------------------
+     main section styles here
+--------------------------------- */
+main{
+	display: flex;
+	justify-content: center;
+}
+.main-section{
+	max-width:1170px;
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	margin: 3em 0;
+	justify-content: center;
+}
+
+/* --- nav links styles  here ---*/
+
+nav{
+	padding: 0 30px;
+	background-color: #0e0225;
+	border-radius: 10px;
+	height: 332px;
+}
+nav ul li{
+	width: 230px;
+	margin: 40px 0;
+	list-style: none;
+	text-align: center;
+	border-radius: 5px;
+	padding: 17px 0;
+	background-color: white;
+}
+nav ul li a{
+	font-size: 20px;
+	font-weight: 500;
+	text-decoration: none;
+	color: #000;
+}
+.active{
+	background-color: rgb(238, 27, 90);
+	box-shadow: inset 0 0 0 0 #05bbf2;
+    transition: ease-out .3s;
+}
+.active a{
+	color: #fff;
+}
+.active:hover{
+	box-shadow: inset 250px 0 0 0 #05d6f2;
+}
+.active:hover a i{
+	color: #000;
+}
+
+/* --- blogs styles here --- */
+.main-section> div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.blogs{
+	padding:0 20px 20px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+.blog{
+	box-shadow: 2px 2px 5px gray;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.blog-thumbail{
+	width: 100%;
+}
+.blog-thumbail img{
+	width: 100%;
+}
+
+.blog-detail{
+	padding: 15px;
+	background-color: rgb(251, 248, 248);
+}
+.transfer-btn{
+	border: 1px solid #161616;
+	padding: 5px 15px;
+    border-radius: 5px;
+	background-color: transparent;
+}
+.transfer-btn a{
+	Font-size: 16px;
+	font-weight: 500;
+	text-decoration: none;
+	color: #161616;
+}
+.blog-title{
+	margin: 15px 0;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.blog-icon, .blog-icon>span{
+	display: flex;
+	align-items: center;
+}
+.blog-icon>span>i{
+	margin-right: 10px;
+}
+.blog-duration{
+	margin-right: 2em;
+}
+.view-all-btn{
+	display: none;
+	margin-top: 20px;
+	border: none;
+	background-image: linear-gradient(orange, rgb(223, 80, 23), rgb(231, 57, 34));
+	padding: 12px 28px;
+	border-radius: 5px;
+}
+.view-all-btn a{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+	color: #fff;
+}
+
+/* -------------------------------
+    footer section styles here
+---------------------------------- */
+
+footer{
+	background-color: #06010f;
+	padding: 2em 6em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+footer h1{
+	margin-bottom: 1em;
+	color: rgb(194, 189, 189);
+}
+.footer-links{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 1em 0;
+}
+.footer-links li{
+	list-style: none;
+	margin: 1em;
+}
+.footer-links li a{
+	font-size: 16px;
+	text-decoration: none;
+	color: #B9B9B9;
+	letter-spacing: 1px;
+}
+
+/* --- social meadia links styles here ---*/
+
+.social-media-icons i{
+	font-size: 1.5em;	
+	padding: .8rem;
+	margin: .5em;
+	color: white;
+}
+.social-media-icons p{
+	border: dotted rgb(143, 129, 129);
+       color: rgb(146, 135, 135);
+       padding: 1em 6em;
+}
+/* --- match blogs styles here--- */
+
+.match-sheduels{
+	padding: 30px 20px;
+	max-height: 220px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.teams-flag{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+.flag {
+	max-width: 80px;
+	max-height: 56px;
+}
+
+/*  --- all group pages point table styles here ---*/
+.team-point table{
+	align-items: center;
+	width: 100%;
+	padding: 0 20px 20px;
+
+}
+.team-point .blog-title{
+	display: flex;
+	justify-content: space-around;
+}
+.team-point table th, td{
+	padding: 10px 12px;
+}
+
+/* --- point table country color styles here --- */
+
+.color-navyblue{
+	color: #001559;
+}
+.color-skyblue{
+	color: #5CA6F7;
+}
+.color-green{
+	color: #0F8034;
+}
+.color-red{
+	color: #E71D25;
+}
+
+/* --- media query section here--- */
+
+
+/* --- media query for mobile devies here--- */
+
+@media only screen and (max-width:577px) {
+
+	/* --- banner section here--- */
+	.banner{
+		flex-direction: column;
+		padding: 0;
+		margin: 0;
+	}
+	.banner-text{
+		width: 100%;
+		margin-left: 0;
+		padding: 1.5em;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.banner-title{
+		font-size: 2em;
+	}
+	.banner-text>p{
+		width: 80%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.banner-img{
+	    width: 100%;
+		padding: 0 20px;
+	}
+	.banner-img img{
+		height: 100%;
+	}
+
+	/* --- main section here--- */
+	nav{
+		height: auto;
+		margin-bottom: 20px;
+		background-color: transparent;
+		display: flex;
+		justify-content: center;
+	}
+	nav ul li{
+		margin: 20px 0;
+		border: 1px solid gray;
+	}
+	.main-section, .blogs{
+		grid-template-columns: 1fr;
+		width: 100%;
+	}
+	footer h2{
+		font-size: 1.4em;
+	}
+	.footer-links{
+		flex-direction: column;
+		text-align: center;
+	}
+	.social-media-icons{
+		display: flex;
+		flex-direction: column;
+	}
+	.social-media-icons p{
+		display: none;
+	}
+}
+ 
+/* --- media query for medium devies here--- */
+
+@media only screen and (min-width:577px) and (max-width:768px){
+
+	/* banner section */
+	.banner-title {
+		font-size: 2em;
+	}
+	.banner-text>p{
+		font-size: 14px;
+		height: 48px;
+		overflow: hidden;
+	}
+	.main-section {
+		grid-template-columns: 1fr;
+	    justify-content: center;
+	}
+	.main-section nav {
+		background-color: transparent;
+		height: auto;
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	.main-section nav ul {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+	}
+	.main-section nav ul li {
+		width: 150px;
+		margin: 0 10px;
+		border: 1px solid gray;
+	}
+	.main-section nav ul li a{
+		font-size: 14px;
+	}
+	.blogs {
+		width: 100%;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.view-all-btn{
+		display: block;
+	}
+	.social-media-icons {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.social-media-icons p{
+		display: none;
+	}
+}
+
+/* --- media query for large devies here--- */
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+
+	/* --- banner section here--- */
+	.banner-title{
+		font-size: 2.5em;
+	}
+	.main-section{
+		grid-template-columns: 1fr;
+		justify-content: center;
+	}
+	.main-section nav{
+		background-color: transparent;
+		height: auto;
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	.main-section nav ul{
+		display: flex;
+		justify-content: center;
+		margin: 0;
+	}
+	.main-section nav ul li{
+		margin: 0 10px;
+		border: 1px solid gray;
+	}
+	.blogs{
+		width: 100%;
+		grid-template-columns: repeat(2,1fr);
+	}
+	.view-all-btn {
+		display: block;
+	}
+	/*-------------------
+	      THE END 
+	 --------------------*/
